@@ -1,11 +1,11 @@
 {
     "files.exclude": {
-        "node_modules": false,
-        "public": false,
-        ".vscode": false,
-        "README.md": false,
-        "package.json": false,
-        "package-lock.json": false
+        "node_modules": true,
+        "public": true,
+        ".vscode": true,
+        "README.md": true,
+        "package.json": true,
+        "package-lock.json": true
     },
-    "workspace.isHidden": false
+    "workspace.isHidden": true
 }

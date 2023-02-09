@@ -16,7 +16,6 @@ import logo from './AKC-LOGO.png';
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
-  background-color: var(--wp--preset--color--luminous-vivid-amber);
   height: 115px;
   border-bottom: 1px solid var(--wp--preset--color--black);
 `;
@@ -28,6 +27,7 @@ const Logo = styled.img`
 
 const ContentDiv = styled.div`
   margin: 0 3rem;
+  padding: 1rem 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,8 +36,44 @@ const ContentDiv = styled.div`
 const UtilityDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 `;
+
+const StyledA = styled.a`
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--utility--color);
+  text-decoration: none;
+  &:hover {
+    color: var(--utility--color--hover);
+  }
+`;
+
+const StyledForm = styled.form`
+  display: flex;
+  align-items: center;
+  & > * {
+    text-style: italic;
+    font-size: 1rem;
+    font-style: italic;
+    border: 1px solid var(--utility--color--hover);
+  }
+  & > input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  & > button {
+    background-color: var(--utility--color--hover);
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+`;
+
+const StyledSearch = styled.input``;
 
 const StyledNav = styled.nav`
   display: flex;
@@ -46,7 +82,12 @@ const StyledNav = styled.nav`
 const StyledUl = styled.ul`
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
+  list-style: none;
+`;
+
+const StyledLi = styled.li`
+  white-space: nowrap;
 `;
 
 export default function Header() {
@@ -55,64 +96,64 @@ export default function Header() {
       <Logo src={logo} />
       <ContentDiv>
         <UtilityDiv>
-          <a href="#">
+          <StyledA href="#">
             <FontAwesomeIcon icon={faCalendarDays} />
             Event Search
-          </a>
-          <a href="#">
+          </StyledA>
+          <StyledA href="#">
             <FontAwesomeIcon icon={faPaw} />
             Find a Puppy
-          </a>
-          <a href="#">
+          </StyledA>
+          <StyledA href="#">
             <FontAwesomeIcon icon={faLaptopCode} />
             Register Your Dog
-          </a>
-          <a href="#">
+          </StyledA>
+          <StyledA href="#">
             <FontAwesomeIcon icon={faCartShopping} />
             Shop
-          </a>
-          <a href="#">
+          </StyledA>
+          <StyledA href="#">
             <FontAwesomeIcon icon={faTv} />
             NZKC TV
-          </a>
-          <a href="#">
+          </StyledA>
+          <StyledA href="#">
             <FontAwesomeIcon icon={faUser} />
             Sign In
-          </a>
-          <form action="#">
-            <input type="text" placeholder="Search" />
+          </StyledA>
+          <StyledForm action="#">
+            <StyledSearch type="text" placeholder="Search" />
             <button type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
-          </form>
+          </StyledForm>
         </UtilityDiv>
         <StyledNav>
           <StyledUl>
-            <li>
+            <StyledLi>
               BREEDS A-Z
               {' '}
               <FontAwesomeIcon icon={faChevronDown} />
-            </li>
-            <li>
+            </StyledLi>
+            <StyledLi>
               EXPERT ADVICE
               {' '}
               <FontAwesomeIcon icon={faChevronDown} />
-            </li>
-            <li>
+            </StyledLi>
+            <StyledLi>
               PRODUCTS & SERVICES
               {' '}
               <FontAwesomeIcon icon={faChevronDown} />
-            </li>
-            <li>
+            </StyledLi>
+            <StyledLi>
               SPORTS & EVENTS
               {' '}
               <FontAwesomeIcon icon={faChevronDown} />
-            </li>
-            <li>
+            </StyledLi>
+            <StyledLi>
               CLUBS & DELEGATES
               {' '}
               <FontAwesomeIcon icon={faChevronDown} />
-            </li>
+            </StyledLi>
           </StyledUl>
         </StyledNav>
       </ContentDiv>
