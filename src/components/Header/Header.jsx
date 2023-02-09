@@ -26,7 +26,7 @@ const Logo = styled.img`
 `;
 
 const ContentDiv = styled.div`
-  margin: 0 3rem;
+  margin: 0 1rem;
   padding: 1rem 0 0 0;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,11 @@ const UtilityDiv = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  & > :nth-child(6) {
+    padding 0 1.5rem;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
 `;
 
 const StyledA = styled.a`
@@ -62,11 +67,9 @@ const StyledForm = styled.form`
     border: 1px solid var(--utility--color--hover);
   }
   & > input {
+    width: 7rem;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-  }
-  & > input:focus {
-    border: 1px solid var(--utility--color--hover);
   }
   & > button {
     background-color: var(--utility--color--hover);
@@ -82,17 +85,32 @@ const StyledForm = styled.form`
 
 const StyledNav = styled.nav`
   display: flex;
+  justify-content: center;
 `;
 
 const StyledUl = styled.ul`
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  height: 60px;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   list-style: none;
 `;
 
 const StyledLi = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
   white-space: nowrap;
+  & > * {
+    color: var(--utility--color);
+  }
+  &:hover {
+    border: 1px solid gray;
+    color: var(--utility--color--hover);
+  }
 `;
 
 export default function Header() {
@@ -136,27 +154,22 @@ export default function Header() {
           <StyledUl>
             <StyledLi>
               BREEDS A-Z
-              {' '}
               <FontAwesomeIcon icon={faChevronDown} />
             </StyledLi>
             <StyledLi>
               EXPERT ADVICE
-              {' '}
               <FontAwesomeIcon icon={faChevronDown} />
             </StyledLi>
             <StyledLi>
               PRODUCTS & SERVICES
-              {' '}
               <FontAwesomeIcon icon={faChevronDown} />
             </StyledLi>
             <StyledLi>
               SPORTS & EVENTS
-              {' '}
               <FontAwesomeIcon icon={faChevronDown} />
             </StyledLi>
             <StyledLi>
               CLUBS & DELEGATES
-              {' '}
               <FontAwesomeIcon icon={faChevronDown} />
             </StyledLi>
           </StyledUl>
