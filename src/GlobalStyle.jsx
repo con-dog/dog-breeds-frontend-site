@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import lato from './fonts/Lato/Lato-Regular.ttf';
 
 const GlobalStyle = createGlobalStyle`
+
+  @font-face {
+    font-family: 'Lato';
+    src: url(${lato}) format('truetype');
+  }
+
   :root {
     --logo-color: #9FBDCD;
     --wp--preset--color--black: #000000;
@@ -28,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
     --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
     --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
   }
+
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
 `;
 
 export default GlobalStyle;
