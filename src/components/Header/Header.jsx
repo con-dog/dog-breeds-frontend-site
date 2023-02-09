@@ -65,15 +65,20 @@ const StyledForm = styled.form`
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
+  & > input:focus {
+    border: 1px solid var(--utility--color--hover);
+  }
   & > button {
     background-color: var(--utility--color--hover);
     color: #fff;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    cursor: pointer;
+  }
+  & > button:hover {
+    background-color: var(--utility--color);
   }
 `;
-
-const StyledSearch = styled.input``;
 
 const StyledNav = styled.nav`
   display: flex;
@@ -121,7 +126,7 @@ export default function Header() {
             Sign In
           </StyledA>
           <StyledForm action="#">
-            <StyledSearch type="text" placeholder="Search" />
+            <input type="text" placeholder="Search" />
             <button type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
