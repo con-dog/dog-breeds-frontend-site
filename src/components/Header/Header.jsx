@@ -3,7 +3,15 @@ import styled from 'styled-components';
 import Navbar from './Navbar/Navbar';
 import logo from './AKC-LOGO.png';
 
+const Wrapper = styled.div`
+  background-color: #fff;
+  padding-bottom: 2rem;
+  position: sticky;
+  top: 0;
+`;
+
 const StyledHeader = styled.header`
+  background-color: var(--wp--preset--color--white);
   display: flex;
   justify-content: space-between;
   height: 115px;
@@ -17,9 +25,11 @@ const Logo = styled.img`
 
 export default function Header() {
   return (
-    <StyledHeader>
-      <Logo src={logo} />
-      <Navbar />
-    </StyledHeader>
+    <Wrapper>
+      <StyledHeader>
+        <Logo src={logo} />
+        <Navbar />
+      </StyledHeader>
+    </Wrapper>
   );
 }
