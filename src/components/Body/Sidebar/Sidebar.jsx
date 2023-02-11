@@ -61,6 +61,9 @@ const FilterButtonClearAll = styled.button`
   color: var(--utility--color);
   font-size: 1rem;
   cursor: pointer;
+  &:hover {
+    color: var(--default--color--blue);
+  }
 `;
 
 const FormBodyDiv = styled.div`
@@ -84,6 +87,29 @@ const AccordianButton = styled.button`
     font-size: 1rem;
     font-weight: 300;
     color: var(--utility--color);
+  }
+  & > *:hover {
+    color: var(--default--color--blue);
+  }
+`;
+
+const SubmitDiv = styled.div`
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const SubmitButton = styled.button`
+  background-color: var(--utility--color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--default--color--blue);
   }
 `;
 
@@ -142,11 +168,11 @@ export default function Sidebar() {
           </AccordianButton>
         </FormBodyDiv>
         <hr />
-        <div>
-          <button type="button">
+        <SubmitDiv>
+          <SubmitButton type="button">
             SUBMIT
-          </button>
-        </div>
+          </SubmitButton>
+        </SubmitDiv>
       </form>
     </StyledAside>
   );
