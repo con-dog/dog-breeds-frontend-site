@@ -28,7 +28,7 @@ const HeroDiv = styled.div`
   gap: 1rem;
   padding: 1rem;
   margin: 4rem auto;
-  width: 80%;
+  width: 85%;
   height: 19rem;
 `;
 
