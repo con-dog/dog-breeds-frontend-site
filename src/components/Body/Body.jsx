@@ -32,7 +32,6 @@ const StyledMain = styled.main`
 `;
 
 const StyledSidebar = styled(Sidebar)`
-  overflow: auto;
 `;
 
 export default function Body() {
