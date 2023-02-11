@@ -1,19 +1,19 @@
 {
     "files.exclude": {
-        "node_modules": true,
-        "public": true,
-        ".vscode": true,
-        "README.md": true,
-        "package.json": true,
-        "package-lock.json": true,
-        "src/components/Header": true,
-        "src/components/Body/CardGrid": true,
-        "src/components/Body/Hero": true,
-        "src/components/Body/LetterFilter": true,
-        "src/components/Body/ResourcesBillboard": true,
-        "src/components/Footer": true,
-        "src/fonts/Lato": true,
-        "src/fonts": true
+        "node_modules": false,
+        "public": false,
+        ".vscode": false,
+        "README.md": false,
+        "package.json": false,
+        "package-lock.json": false,
+        "src/components/Header": false,
+        "src/components/Body/CardGrid": false,
+        "src/components/Body/Hero": false,
+        "src/components/Body/LetterFilter": false,
+        "src/components/Body/ResourcesBillboard": false,
+        "src/components/Footer": false,
+        "src/fonts/Lato": false,
+        "src/fonts": false
     },
-    "workspace.isHidden": true
+    "workspace.isHidden": false
 }
