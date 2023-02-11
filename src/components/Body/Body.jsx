@@ -12,10 +12,12 @@ const BodyDiv = styled.div`
 `;
 
 const StyledBreadcrumbs = styled.ul`
+  padding: 0;
+  width: 90%;
   font-size: 1.2rem;
   color: grey;
   cursor: pointer;
-  margin: 4rem auto;
+  margin: 2rem auto;
   display: flex;
   list-style: none;
   & > li:not(:last-child) {
