@@ -9,7 +9,7 @@ const BodyDiv = styled.div`
   width: 90%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 `;
 
 export default function Body() {
