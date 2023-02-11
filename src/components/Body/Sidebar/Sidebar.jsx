@@ -24,7 +24,7 @@ const SelectBreed = styled.select`
   width: 100%;
   height: 3rem;
   background-color: var(--default--color--white);
-  border: 1px solid var(--utility--color);
+  border: 1px solid var(--utility--color--hover);
   border-radius: 5px;
   color: gray;
   margin-bottom: 20px;
