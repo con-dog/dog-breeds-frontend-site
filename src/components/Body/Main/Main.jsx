@@ -29,7 +29,7 @@ const HeroDiv = styled.div`
   padding: 1rem;
   margin: 4rem auto;
   width: 85%;
-  height: 19rem;
+  height: 24.5rem;
 `;
 
 const HeroImage = styled.img`
@@ -48,7 +48,34 @@ const HeroP = styled.p`
     margin: 0;
     font-size: 1.5rem;
   }
+`;
 
+const FilterByLetter = styled.div`
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  gap: 0.5rem;
+  margin: auto;
+  & > * {
+    aspect-ratio: 1/1;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid var(--utility--color--hover);
+    border-radius: 5px;
+    color: var(--utility--color);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: var(--default--color--blue);
+      border: 1px solid var(--default--color--blue);
+    }
+  }
 `;
 
 export default function Main() {
@@ -73,6 +100,11 @@ export default function Main() {
           Dogs are also used to help people with disabilities, such as blindness or deafness.
         </HeroP>
       </HeroDiv>
+      <FilterByLetter>
+        {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter) => (
+          <button key={letter} type="button">{letter}</button>
+        ))}
+      </FilterByLetter>
       <p>Test</p>
       <p>Test</p>
       <p>Test</p>
