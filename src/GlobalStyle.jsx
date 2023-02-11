@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --logo-color: #9FBDCD;
+    --default--color--blue: #003594;
     --utility--color: #007acc;
     --utility--color--hover: #09f;
     --wp--preset--color--black: #000000;
