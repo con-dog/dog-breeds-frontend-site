@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Sidebar from './Sidebar/Sidebar';
+// import Main from './Main/Main';
 
 const BodyDiv = styled.div`
   padding: 2rem;
@@ -33,9 +34,6 @@ const StyledMain = styled.main`
   width: 100%;
 `;
 
-const StyledSidebar = styled(Sidebar)`
-`;
-
 export default function Body() {
   return (
     <div>
@@ -48,7 +46,7 @@ export default function Body() {
         </li>
       </StyledBreadcrumbs>
       <BodyDiv>
-        <StyledSidebar />
+        <Sidebar />
         <StyledMain>
           <h1> Dog Breeds</h1>
           <h1> Dog Breeds</h1>
