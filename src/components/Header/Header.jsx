@@ -5,7 +5,7 @@ import logo from './AKC-LOGO.png';
 
 const Wrapper = styled.div`
   background-color: #fff;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   position: sticky;
   top: 0;
 `;

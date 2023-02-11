@@ -5,7 +5,15 @@
         ".vscode": true,
         "README.md": true,
         "package.json": true,
-        "package-lock.json": true
+        "package-lock.json": true,
+        "src/components/Header": true,
+        "src/components/Body/CardGrid": true,
+        "src/components/Body/Hero": true,
+        "src/components/Body/LetterFilter": true,
+        "src/components/Body/ResourcesBillboard": true,
+        "src/components/Footer": true,
+        "src/fonts/Lato": true,
+        "src/fonts": true
     },
     "workspace.isHidden": true
 }
