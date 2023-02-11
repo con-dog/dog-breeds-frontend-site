@@ -18,6 +18,9 @@ const StyledBreadcrumbs = styled.ul`
   margin: 4rem auto;
   display: flex;
   list-style: none;
+  & > li:not(:last-child) {
+    color: var(--utility--color);
+  }
   & > li:not(:last-child)::after {
     content: ' /';
   }
