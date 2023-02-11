@@ -6,23 +6,52 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 const StyledAside = styled.aside`
   width: 350px;
   position: sticky;
-  background-color: #4caf50;
+  background-color: #FFF;
   align-self: flex-start;
   top: 250px;
   height: 500px;
 `;
 
+const StyledLabelSelect = styled.label`
+  display: flex;
+  color: var(--default--color--blue);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+`;
+
+const SelectBreed = styled.select`
+  width: 100%;
+  height: 3rem;
+  background-color: var(--default--color--white);
+  border: 1px solid var(--utility--color);
+  border-radius: 5px;
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0 0.5rem;
+  & > *:not(:first-child) {
+    color: black;
+    font-style: normal;
+  }
+`;
+
 export default function Sidebar() {
   return (
     <StyledAside>
-      <h1>Sidebar</h1>
-      <h2>FIND BY BREED NAME</h2>
-      <select name="breeds" id="breeds">
+      <StyledLabelSelect htmlFor="breeds">
+        FIND BY BREED NAME
+      </StyledLabelSelect>
+      <SelectBreed name="breeds" id="breeds">
+        <option value="" disabled selected>Select a Breed</option>
         <option value="Affenpinscher">Affenpinscher</option>
         <option value="Afghan Hound">Afghan Hound</option>
         <option value="Airedale Terrier">Airedale Terrier</option>
         <option value="Akita">Akita</option>
-      </select>
+      </SelectBreed>
+
       <form>
         <div>
           <h3>FILTER BREEDS</h3>
