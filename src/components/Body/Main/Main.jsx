@@ -97,7 +97,10 @@ export default function Main() {
           <br />
           <br />
           Today, people mostly use dogs for companionship and entertainment.
-          Dogs are also used to help people with disabilities, such as blindness or deafness.
+          Dogs are also used to help people with disabilities,
+          such as blindness or deafness.
+          They are also used for search and rescue operations, and as service animals
+          for law enforcement.
         </HeroP>
       </HeroDiv>
       <FilterByLetter>
