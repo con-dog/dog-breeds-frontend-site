@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const StyledAside = styled.aside`
-  width: 350px;
+  width: 400px;
   position: sticky;
   background-color: #FFF;
   align-self: flex-start;
@@ -38,6 +38,55 @@ const SelectBreed = styled.select`
   }
 `;
 
+const FilterFormHeaderDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > * {
+    font-weight: 700;
+    margin: 1.5rem 0 0 0;
+  }
+
+  }
+`;
+
+const FilterFormHeader = styled.h3`
+  font-size: 1rem;
+  color: var(--default--color--blue);
+`;
+
+const FilterButtonClearAll = styled.button`
+  background-color: transparent;
+  border: none;
+  color: var(--utility--color);
+  font-size: 1rem;
+  cursor: pointer;
+`;
+
+const FormBodyDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+`;
+
+const AccordianButton = styled.button`
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem;
+  & > * {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--utility--color);
+  }
+`;
+
 export default function Sidebar() {
   return (
     <StyledAside>
@@ -53,46 +102,46 @@ export default function Sidebar() {
       </SelectBreed>
 
       <form>
-        <div>
-          <h3>FILTER BREEDS</h3>
-          <button type="button">CLEAR ALL</button>
-        </div>
+        <FilterFormHeaderDiv>
+          <FilterFormHeader>FILTER BREEDS</FilterFormHeader>
+          <FilterButtonClearAll type="button">CLEAR ALL</FilterButtonClearAll>
+        </FilterFormHeaderDiv>
         <hr />
-        <div>
-          <button type="button">
+        <FormBodyDiv>
+          <AccordianButton type="button">
             <span>GROUP</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>ACTIVITY LEVEL</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>BARKING LEVEL</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>CHARACTERISTICS</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>COAT TYPE</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>SHEDDING</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>SIZE</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <button type="button">
+          </AccordianButton>
+          <AccordianButton type="button">
             <span>TRAINABILITY</span>
             <FontAwesomeIcon icon={faPlus} />
-          </button>
-          <hr />
-        </div>
+          </AccordianButton>
+        </FormBodyDiv>
+        <hr />
         <div>
           <button type="button">
             SUBMIT
