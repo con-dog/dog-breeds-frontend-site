@@ -13,7 +13,8 @@
         "src/components/Body/ResourcesBillboard": false,
         "src/components/Footer": false,
         "src/fonts/Lato": false,
-        "src/fonts": false
+        "src/fonts": false,
+        "src/components/Body/Sidebar": false
     },
     "workspace.isHidden": false
 }
