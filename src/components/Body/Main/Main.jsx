@@ -1,6 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import heroImage from './Hero.png';
+import Card from '../Card/Card';
+import affenpinscher from './images/affenpinscher.png';
+import afghanHound from './images/afghan-hound.png';
+import airedaleTerrier from './images/airedale-terrier.png';
+import akita from './images/akita.png';
+import alaskanKleeKai from './images/alaskan-klee-kai.png';
+import alaskanMalamute from './images/alaskan-malamute.png';
+import americanBulldog from './images/american-bulldog.png';
+import americanEnglishCoonhound from './images/american-english-coonhound.png';
+import americanEskimoDog from './images/american-eskimo-dog.png';
 
 const MainDiv = styled.div`
   width: 100%;
@@ -78,6 +88,39 @@ const FilterByLetter = styled.div`
   }
 `;
 
+const CardGrid = styled.div`
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2rem;
+  place-items: center;
+  width: 90%;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+`;
+
+const LoadMoreDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
+const LoadMoreButton = styled.button`
+  margin: 0 auto;
+  background-color: var(--utility--color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--default--color--blue);
+  }
+`;
+
 export default function Main() {
   return (
     <MainDiv>
@@ -108,49 +151,57 @@ export default function Main() {
           <button key={letter} type="button">{letter}</button>
         ))}
       </FilterByLetter>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-
+      <CardGrid>
+        <Card
+          image={affenpinscher}
+          name="Affenpinscher"
+          description="A small, spunky toy dog breed with a unique and quirky monkey like appearance.
+        Originally ..."
+        />
+        <Card
+          image={afghanHound}
+          name="Afghan Hound"
+          description="A regal and elegant breed of dog, with a distinctive long, silky coat and slender build. Used for ..."
+        />
+        <Card
+          image={airedaleTerrier}
+          name="Airedale Terrier"
+          description="Known as the King of Terriers, is a strong, confident, and active breed known for their ..."
+        />
+        <Card
+          image={akita}
+          name="Akita"
+          description="A large, powerful dog breed, with an intimidating appearance. Originally bred for hunting ..."
+        />
+        <Card
+          image={alaskanKleeKai}
+          name="Alaskan Klee Kai"
+          description="A small, spitz-type breed that closely resembles a miniature Alaskan Husky. This breed is ..."
+        />
+        <Card
+          image={alaskanMalamute}
+          name="Alaskan Malamute"
+          description="A large and powerful breed of dog, originally bred for hauling heavy loads in the harsh ..."
+        />
+        <Card
+          image={americanBulldog}
+          name="American Bulldog"
+          description="A powerful and muscular breed, originally bred for bull baiting and farm work. They are ..."
+        />
+        <Card
+          image={americanEnglishCoonhound}
+          name="Coonhound"
+          description="A versatile and energetic breed, originally bred for hunting raccoons and other game they ..."
+        />
+        <Card
+          image={americanEskimoDog}
+          name="Eskimo Dog"
+          description="A small to medium-sized breed of dog, originally bred as a companion and watchdog ..."
+        />
+      </CardGrid>
+      <LoadMoreDiv>
+        <LoadMoreButton type="button">Load More</LoadMoreButton>
+      </LoadMoreDiv>
     </MainDiv>
   );
 }

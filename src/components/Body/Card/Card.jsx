@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CardDiv = styled.div`
+  max-width: 260px;
     background-color: #fff;
     outline: 1px solid gray;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -18,6 +19,8 @@ const CardImage = styled.img`
 `;
 
 const CardHeader = styled.h3`
+  max-width: 260px;
+  word-wrap: break-word;
     padding: 0.5rem;
     margin: 0 auto;
     font-size: 1.5rem;
