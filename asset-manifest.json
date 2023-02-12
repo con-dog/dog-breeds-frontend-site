@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2fb2746.css",
+    "main.js": "/static/js/main.7313a664.js",
+    "static/media/airedale-terrier.png": "/static/media/airedale-terrier.6b65e05c9fdadcaf33bd.png",
+    "static/media/alaskan-klee-kai.png": "/static/media/alaskan-klee-kai.d28173a219dc6d0d7e09.png",
+    "static/media/american-english-coonhound.png": "/static/media/american-english-coonhound.b54c3b6b38d835bcc17f.png",
+    "static/media/akita.png": "/static/media/akita.261c7e1c741cf63a53ce.png",
+    "static/media/american-bulldog.png": "/static/media/american-bulldog.67e99ac4411e7cabc355.png",
+    "static/media/Hero.png": "/static/media/Hero.25d1cc7705d1fccf8008.png",
+    "static/media/afghan-hound.png": "/static/media/afghan-hound.9cc2d0975484b68f062b.png",
+    "static/media/affenpinscher.png": "/static/media/affenpinscher.1976abefa1545df6b902.png",
+    "static/media/alaskan-malamute.png": "/static/media/alaskan-malamute.8609505fde6bcea9d0d6.png",
+    "static/media/american-eskimo-dog.png": "/static/media/american-eskimo-dog.35b5d767fd065473c4a6.png",
+    "static/media/AKC-LOGO.png": "/static/media/AKC-LOGO.f27762fd05016f8a2f0f.png",
+    "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "index.html": "/index.html",
+    "main.a2fb2746.css.map": "/static/css/main.a2fb2746.css.map",
+    "main.7313a664.js.map": "/static/js/main.7313a664.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2fb2746.css",
+    "static/js/main.7313a664.js"
+  ]
+}
