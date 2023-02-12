@@ -23,7 +23,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "homepage": "https://con-dog.github.io/dog-breeds-frontend-site",
+    "homepage": "https://con-dog.github.io/dog-breeds-frontend-site/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
