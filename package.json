@@ -1,7 +1,8 @@
 {
   "name": "dog-breeds",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://con-dog.github.io/dog-breeds-frontend-site",
+  "private": "false",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -23,7 +24,6 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "homepage": "https://con-dog.github.io/dog-breeds-frontend-site/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
